@@ -7,7 +7,7 @@ window.addEventListener('DOMContentLoaded', () => {
   const gallery = new Gallery({
     photos,
     size: 5,
-    current: 0,
+    current: '0',
     container: document.querySelector('#gallery'),
   });
 

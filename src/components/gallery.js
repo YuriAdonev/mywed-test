@@ -4,7 +4,7 @@ export default class Gallery {
   constructor({ photos, size, current, container }) {
     this._photos = photos;
     this._size = size;
-    this._current = current;
+    this._current = photos.findIndex(photo => photo.id === current);
     this._container = container;
     this._offsetIndex = 0;
     this._galleryListContainer = null;
